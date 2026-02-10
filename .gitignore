@@ -1,0 +1,26 @@
+## Build results
+bin/
+obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Rider
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## Environment
+appsettings.Development.json
+appsettings.Local.json
+
+## Secrets
+*.pfx
+*.key
