@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30 d17.14
+VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService", "TransactionService.csproj", "{9E9387CD-2FC0-4A6F-AEB1-44FE3EE78AFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.API", "src\TransactionService.API\TransactionService.API.csproj", "{185A3451-37A1-A5D4-8EAE-9BCFD1941B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.Application", "src\TransactionService.Application\TransactionService.Application.csproj", "{ABB255D4-8191-408C-9716-6AF72F9C782E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.Domain", "src\TransactionService.Domain\TransactionService.Domain.csproj", "{B7324C4A-A412-4DF8-A157-97ADEF25B682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.Infrastructure", "src\TransactionService.Infrastructure\TransactionService.Infrastructure.csproj", "{0361AAE9-ED0D-4DDE-BFF0-82B37E5D9B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService.Persistence", "src\TransactionService.Persistence\TransactionService.Persistence.csproj", "{DC3924AE-4FB5-46D1-80CC-18C1CBFDF91F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +19,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E9387CD-2FC0-4A6F-AEB1-44FE3EE78AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E9387CD-2FC0-4A6F-AEB1-44FE3EE78AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E9387CD-2FC0-4A6F-AEB1-44FE3EE78AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E9387CD-2FC0-4A6F-AEB1-44FE3EE78AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185A3451-37A1-A5D4-8EAE-9BCFD1941B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185A3451-37A1-A5D4-8EAE-9BCFD1941B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185A3451-37A1-A5D4-8EAE-9BCFD1941B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185A3451-37A1-A5D4-8EAE-9BCFD1941B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB255D4-8191-408C-9716-6AF72F9C782E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB255D4-8191-408C-9716-6AF72F9C782E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB255D4-8191-408C-9716-6AF72F9C782E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB255D4-8191-408C-9716-6AF72F9C782E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7324C4A-A412-4DF8-A157-97ADEF25B682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7324C4A-A412-4DF8-A157-97ADEF25B682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7324C4A-A412-4DF8-A157-97ADEF25B682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7324C4A-A412-4DF8-A157-97ADEF25B682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0361AAE9-ED0D-4DDE-BFF0-82B37E5D9B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0361AAE9-ED0D-4DDE-BFF0-82B37E5D9B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0361AAE9-ED0D-4DDE-BFF0-82B37E5D9B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0361AAE9-ED0D-4DDE-BFF0-82B37E5D9B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3924AE-4FB5-46D1-80CC-18C1CBFDF91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3924AE-4FB5-46D1-80CC-18C1CBFDF91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3924AE-4FB5-46D1-80CC-18C1CBFDF91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3924AE-4FB5-46D1-80CC-18C1CBFDF91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A3209976-B4AC-4FC7-8F4E-F92C9A275346}
+		SolutionGuid = {8ECB8DFD-FD22-4CA2-9D36-4F7733919D89}
 	EndGlobalSection
 EndGlobal
