@@ -1,3 +1,6 @@
+using AuthService.Application.Common.Interfaces;
+using AuthService.Application.Services;
+using AuthService.Infrastructure.Security;
 using AuthService.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
+builder.Services.AddScoped<IAuthService,AuthService.Application.Services.AuthService>();
+builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
 
 builder.Services.AddDbContext<AuthDbContext>(options =>
     options.UseSqlServer(

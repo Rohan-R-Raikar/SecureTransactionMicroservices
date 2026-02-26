@@ -19,7 +19,7 @@ namespace AuthService.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(200);
 
-            builder.Property(x => x.HashPassword)
+            builder.Property(x => x.PasswordHash)
                 .IsRequired();
 
             builder.Property(x => x.CreatedAt)

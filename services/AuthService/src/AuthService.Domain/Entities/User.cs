@@ -9,24 +9,29 @@ namespace AuthService.Domain.Entities
     public class User
     {
         public Guid Id { get; private set; }
-        public string Email{ get; private set; }
-        public string HashPassword { get; private set; }
-        public bool IsActive {  get; private set; }
-        public DateTime CreatedAt {  get; private set; }
-        
+        public string Email { get; private set; }
+        public string PasswordHash { get; private set; }
+        public bool IsActive { get; private set; }
+        public DateTime CreatedAt { get; private set; }
+
         private readonly List<UserRole> _userRoles = new();
         public IReadOnlyCollection<UserRole> UserRoles => _userRoles;
 
-        private User() { } // For EF
+        private User() { }
 
-        public User(string email, string hashPassword)
+        public User(string email)
         {
             Id = Guid.NewGuid();
             Email = email;
-            HashPassword = hashPassword;
             IsActive = true;
             CreatedAt = DateTime.UtcNow;
         }
+
+        public void SetPasswordHash(string passwordHash)
+        {
+            PasswordHash = passwordHash;
+        }
+
         public void AssignRole(Role role)
         {
             _userRoles.Add(new UserRole(Id, role.Id));
